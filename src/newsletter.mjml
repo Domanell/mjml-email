@@ -1,0 +1,32 @@
+<mjml lang="de" owa="desktop">
+  <mj-head>
+    <mj-title></mj-title>
+    <mj-preview></mj-preview>
+
+    <mj-breakpoint width="480px" />
+
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-body width="600px" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-text padding="0" line-height="1.5" />
+      <mj-image padding="0" />
+    </mj-attributes>
+
+    <mj-html-attributes>
+      <mj-selector path=".h1 div">
+        <mj-html-attribute name="role">heading</mj-html-attribute>
+        <mj-html-attribute name="aria-level">1</mj-html-attribute>
+      </mj-selector>
+      <mj-selector path=".h2 div">
+        <mj-html-attribute name="role">heading</mj-html-attribute>
+        <mj-html-attribute name="aria-level">2</mj-html-attribute>
+      </mj-selector>
+    </mj-html-attributes>
+  </mj-head>
+
+  <mj-body>
+    <!-- Sections go here -->
+  </mj-body>
+</mjml>
