@@ -13,18 +13,80 @@ function readOption(longName, shortName) {
   return index === -1 ? undefined : args[index + 1];
 }
 
-const input = readOption('--input', '-i');
-const output = readOption('--output', '-o');
+const flagsWithValue = ['--input', '-i', '--output', '-o', '--port'];
+const booleanFlags = ['--watch', '--dev', '--minify'];
+const positional = [];
+for (let i = 0; i < args.length; i++) {
+  if (flagsWithValue.includes(args[i])) { i++; continue; }
+  if (booleanFlags.includes(args[i])) continue;
+  positional.push(args[i]);
+}
+const templateArgument = positional[0];
+const envFile = path.resolve('.env');
 
-if (!input || !output) {
-  console.error('Usage: node scripts/mjml.cjs --input <source.mjml> --output <output.html> [--watch | --dev] [--minify]');
+function readEnvFile() {
+  try {
+    return fs.readFileSync(envFile, 'utf8');
+  } catch {
+    return '';
+  }
+}
+
+function readEnvVar(key) {
+  const match = readEnvFile().match(new RegExp(`^${key}=(.*)$`, 'm'));
+  return match ? match[1].trim() : undefined;
+}
+
+function writeEnvVar(key, value) {
+  const content = readEnvFile();
+  const pattern = new RegExp(`^${key}=.*$`, 'm');
+  const line = `${key}=${value}`;
+  const next = pattern.test(content)
+    ? content.replace(pattern, line)
+    : `${content}${content && !content.endsWith('\n') ? '\n' : ''}${line}\n`;
+  fs.writeFileSync(envFile, next);
+}
+
+function listTemplates() {
+  try {
+    return fs.readdirSync('emails', { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name);
+  } catch {
+    return [];
+  }
+}
+
+function usageError(message) {
+  console.error(message);
+  console.error('Usage: node scripts/mjml.cjs [<template-name>] [--watch | --dev] [--minify]');
+  console.error('   or: node scripts/mjml.cjs --input <source.mjml> --output <output.html> [--watch | --dev] [--minify]');
+  const available = listTemplates();
+  if (available.length > 0) console.error(`Available templates: ${available.join(', ')}`);
   process.exit(1);
+}
+
+let input = readOption('--input', '-i');
+let output = readOption('--output', '-o');
+
+if (!input && !output) {
+  const name = templateArgument || readEnvVar('TEMPLATE');
+
+  if (!name) usageError('No template given and no TEMPLATE set in .env yet.');
+
+  input = `emails/${name}/${name}.mjml`;
+  output = `emails/${name}/${name}.html`;
+
+  if (!fs.existsSync(input)) usageError(`Template "${name}" not found (expected ${input}).`);
+  if (templateArgument) writeEnvVar('TEMPLATE', name);
+} else if (!input || !output) {
+  usageError('Both --input and --output are required when overriding the convention paths.');
 }
 
 const sourcePath = path.resolve(input);
 const outputPath = path.resolve(output);
 const outputDirectory = path.dirname(outputPath);
-const assetsPath = path.resolve('assets');
+const assetsPath = path.dirname(sourcePath);
 const previewPath = `/${path.basename(outputPath)}`;
 const port = Number(readOption('--port') || process.env.PREVIEW_PORT || 3000);
 const clients = new Set();

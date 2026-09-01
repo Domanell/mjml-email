@@ -3,10 +3,9 @@
 	"version": "1.0.0",
 	"description": "Starter kit for building responsive HTML emails",
 	"scripts": {
-		"build": "mjml src/newsletter.mjml -o dist/newsletter.html --config.minify=true --config.validationLevel=strict",
-		"watch": "mjml -w src/newsletter.mjml -o dist/newsletter.html --config.validationLevel=strict",
-		"watch:daemon": "node scripts/mjml.cjs --watch --input src/newsletter.mjml --output dist/newsletter.html",
-		"dev": "node scripts/mjml.cjs --dev --input src/newsletter.mjml --output dist/newsletter.html"
+		"build": "node scripts/mjml.cjs --minify",
+		"watch": "node scripts/mjml.cjs --watch",
+		"dev": "node scripts/mjml.cjs --dev"
 	},
 	"author": "",
 	"license": "ISC",
