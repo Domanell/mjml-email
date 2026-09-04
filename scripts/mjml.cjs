@@ -86,7 +86,6 @@ if (!input && !output) {
 const sourcePath = path.resolve(input);
 const outputPath = path.resolve(output);
 const outputDirectory = path.dirname(outputPath);
-const assetsPath = path.dirname(sourcePath);
 const previewPath = `/${path.basename(outputPath)}`;
 const port = Number(readOption('--port') || process.env.PREVIEW_PORT || 3000);
 const clients = new Set();
@@ -178,10 +177,8 @@ function resolveFile(rootPath, relativePath) {
 
 function sendFile(requestPath, response) {
   const pathname = requestPath === '/' ? previewPath : requestPath;
-  const isAsset = pathname.startsWith('/assets/');
-  const rootPath = isAsset ? assetsPath : outputDirectory;
-  const relativePath = isAsset ? pathname.slice('/assets/'.length) : pathname.replace(/^\/+/, '');
-  const filePath = resolveFile(rootPath, relativePath);
+  const relativePath = pathname.replace(/^\/+/, '');
+  const filePath = resolveFile(outputDirectory, relativePath);
 
   if (!filePath) {
     response.writeHead(403).end('Forbidden');
