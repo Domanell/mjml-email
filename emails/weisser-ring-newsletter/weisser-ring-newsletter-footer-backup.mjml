@@ -1,0 +1,841 @@
+<mjml lang="de">
+	<mj-head>
+		<mj-title>Jedes Opfer hat eine Geschichte – wir sehen sie</mj-title>
+		<mj-preview>Gemeinsam helfen. Menschen beistehen.</mj-preview>
+		<mj-raw>
+			<meta name="supported-color-schemes" content="light" /> <meta name="color-scheme" content="only light" />
+		</mj-raw>
+		<mj-style>
+			:root,
+			body,
+			html {
+				color-scheme: light;
+			}
+			body,
+			html {
+				color-scheme: only light;
+			}
+			.heart-button img {
+				margin-top: -21px;
+			}
+		</mj-style>
+
+		<mj-font
+			name="Merriweather Sans"
+			href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;700;800&amp;display=swap"
+		/>
+		<mj-font
+			name="Merriweather"
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&amp;display=swap"
+		/>
+
+		<mj-breakpoint width="480px" />
+
+		<mj-attributes>
+			<mj-all font-family="Merriweather, Georgia, 'Times New Roman', serif" />
+
+			<mj-section padding="0" />
+			<mj-column padding="0" />
+			<mj-image padding="0" />
+			<mj-text
+				font-family="Merriweather, Georgia, 'Times New Roman', serif"
+				font-weight="300"
+				font-size="12px"
+				line-height="15px"
+				letter-spacing="0px"
+				color="#1B2645"
+				padding="0"
+			/>
+			<mj-button
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="700"
+				font-size="12px"
+				letter-spacing="-0.3px"
+				text-transform="uppercase"
+				text-decoration="none"
+				background-color="#FF7F00"
+				color="#002550"
+				border-radius="0"
+				inner-padding="8px 14px"
+				padding="0"
+			/>
+
+			<mj-class
+				name="h1"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="800"
+				font-size="26px"
+				line-height="30px"
+				letter-spacing="-0.4px;"
+				text-transform="uppercase"
+			/>
+			<mj-class
+				name="h2"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="700"
+				font-size="18px"
+				line-height="22px"
+				letter-spacing="-0.3px"
+			/>
+			<mj-class
+				name="amount"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="800"
+				font-size="30px"
+				line-height="34px"
+				letter-spacing="0px"
+			/>
+			<mj-class
+				name="lead-in"
+				font-family="Merriweather, Georgia, 'Times New Roman', serif"
+				font-weight="700"
+				font-size="14px"
+				line-height="21px"
+				letter-spacing="0px"
+				color="#019DE2"
+			/>
+			<mj-class
+				name="tile-label"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="300"
+				font-size="10px"
+				line-height="14px"
+				letter-spacing="0px"
+				color="#1B2645"
+			/>
+			<mj-class
+				name="legal"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="300"
+				font-size="9px"
+				line-height="12px"
+				letter-spacing="0"
+				color="#002550"
+			/>
+			<mj-class name="btn-inverse" background-color="#002550" color="#FFFFFF" />
+		</mj-attributes>
+
+		<mj-html-attributes>
+			<mj-selector path=".h1-heading div">
+				<mj-html-attribute name="role">heading</mj-html-attribute>
+				<mj-html-attribute name="aria-level">1</mj-html-attribute>
+			</mj-selector>
+			<mj-selector path=".h2-heading div">
+				<mj-html-attribute name="role">heading</mj-html-attribute>
+				<mj-html-attribute name="aria-level">2</mj-html-attribute>
+			</mj-selector>
+		</mj-html-attributes>
+
+		<mj-style>
+			@media screen and (max-width: 480px) {
+				.hdr-stack,
+				.hdr-stack td,
+				.hdr-stack div {
+					text-align: center !important;
+				}
+				.hdr-stack table {
+					margin: 0 auto !important;
+				}
+				.signature-role p {
+					font-size: 10px !important;
+				}
+				.h1-mobile div {
+					font-size: 22px !important;
+					line-height: 26px !important;
+				}
+				.img-mobile-center,
+				.img-mobile-center td,
+				.img-mobile-center div {
+					text-align: center !important;
+				}
+				.img-mobile-center table {
+					margin: 0 auto !important;
+				}
+				.img-mobile-center td {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+			}
+			@media screen and (min-width: 480.02px) {
+				.heart-button > table > tbody > tr > td {
+					padding-bottom: 00px !important;
+				}
+				.bleed-r > table > tbody > tr > td {
+					padding-right: 0px !important;
+				}
+				.bleed-r-text > table > tbody > tr > td {
+					padding-right: 0px !important;
+				}
+				.bleed-r-img > table > tbody > tr > td {
+					padding-left: 25px !important;
+					padding-right: 0px !important;
+				}
+				.bleed-l > table > tbody > tr > td {
+					padding-left: 0px !important;
+				}
+				.bleed-l-text > table > tbody > tr > td {
+					padding-left: 0px !important;
+				}
+				.bleed-l-img > table > tbody > tr > td {
+					padding-left: 0px !important;
+					padding-right: 25px !important;
+				}
+			}
+		</mj-style>
+	</mj-head>
+
+	<mj-body width="600px">
+		<!-- Header -->
+		<mj-section background-color="#FF7F00" padding="16px 30px 12px 30px">
+			<mj-column width="50%" vertical-align="top" css-class="hdr-stack">
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/herzenssache-weisser-ring.png"
+					alt="Herzenssache – WEISSER RING"
+					width="245px"
+					align="left"
+					padding="0"
+				/>
+			</mj-column>
+			<mj-column width="50%" vertical-align="top" css-class="hdr-stack" padding-top="7px">
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/hands.png"
+					alt="Herz-Hände-Symbol"
+					width="149px"
+					align="right"
+					padding="0"
+				/>
+				<mj-text
+					align="right"
+					color="#002550"
+					font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+					font-weight="400"
+					font-size="13px"
+					letter-spacing="0px"
+					padding="2px 0 0 0"
+				>
+					Gemeinsam helfen. Menschen beistehen.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<!-- Hero -->
+		<mj-section padding="0">
+			<mj-column>
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/hero.jpg"
+					alt="Jedes Opfer hat eine Geschichte. WIR SEHEN SIE."
+					width="600px"
+					fluid-on-mobile="true"
+					padding="0"
+				/>
+			</mj-column>
+		</mj-section>
+
+		<!-- Heart -->
+		<mj-section padding="0px 30px 10px 30px" css-class="heart-button">
+			<mj-column>
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/heart-button.png"
+					href="https://spenden.weisser-ring.de/spenden"
+					alt="Jetzt spenden!"
+					width="86px"
+					align="right"
+					padding="0"
+				/>
+			</mj-column>
+		</mj-section>
+
+		<!-- Editorial letter -->
+		<mj-section padding="0 30px 0 30px">
+			<mj-column width="353px">
+				<mj-text letter-spacing="0.15px">
+					<p style="margin: 0 0 12px 0">Liebe Leserin, lieber Leser,</p>
+					<p style="margin: 0 0 12px 0">
+						Jedes Jahr werden in Deutschland Millionen Straftaten registriert. Oft stehen die Täter im
+						Mittelpunkt der Berichterstattung. Doch was ist mit den Menschen, die Opfer einer Straftat
+						geworden sind?
+					</p>
+					<p style="margin: 0">
+						Sie tragen körperliche und seelische Verletzungen davon, die oft lange nachwirken. Angst, Scham,
+						Schlaflosigkeit oder der Verlust von Sicherheit können den Alltag dauerhaft verändern. Denn nach
+						einer Straftat ist das Leben für viele Menschen nicht mehr wie zuvor.
+					</p>
+				</mj-text>
+				<mj-text mj-class="lead-in" padding="12px 0 0 0">
+					<p style="margin: 0">Jedes Opfer hat eine Geschichte – wir sehen sie!</p>
+				</mj-text>
+				<mj-text padding="12px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0">
+						Der WEISSE RING steht Betroffenen zur Seite – mit persönlicher Beratung, konkreter Hilfe und
+						einem offenen Ohr – kostenlos und bundesweit.
+					</p>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+		<!-- Editorial letter — signature -->
+		<mj-section padding="0 30px 40px 30px">
+			<mj-group css-class="letter-signature" width="353px">
+				<mj-column width="24%" padding="32px 16px 0 0" vertical-align="top">
+					<mj-image
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/person-photo.png"
+						alt="Porträt Barbara Richstein"
+						width="68px"
+						fluid-on-mobile="true"
+						align="left"
+					/>
+				</mj-column>
+				<mj-column width="76%" padding="32px 0 0 0" vertical-align="top">
+					<mj-text>
+						<p style="margin: 0">Herzliche Grüße<br />Barbara Richstein</p>
+					</mj-text>
+					<mj-text mj-class="legal" color="#1B2645" padding="12px 0 12px 0" css-class="signature-role">
+						Bundesvorsitzende
+					</mj-text>
+					<mj-image
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/logo.png"
+						href="https://weisser-ring.de"
+						alt="WEISSER RING"
+						width="131px"
+						align="left"
+					/>
+				</mj-column>
+			</mj-group>
+		</mj-section>
+
+		<!-- Blue services -->
+		<mj-section
+			background-url="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/bg-blue-services.jpg"
+			background-color="#002550"
+			background-size="cover"
+			background-repeat="no-repeat"
+			background-position="center center"
+			padding="40px 30px 40px 30px"
+			text-align="right"
+		>
+			<mj-column width="353px">
+				<mj-text css-class="h1-mobile" color="#FFFFFF" mj-class="h1" padding="0">
+					HILFE, WENN DAS LEBEN AUS DER BAHN GERÄT
+				</mj-text>
+				<mj-text color="#FFFFFF" mj-class="h2" padding="10px 0 0 0">
+					Unsere Hilfe umfasst unter anderem:
+				</mj-text>
+				<mj-text color="#FFFFFF" padding="8px 0 0 0">
+					<ul style="margin: 0; padding-left: 18px; letter-spacing: 0.15px">
+						<li style="margin: 0 0 5px 0">
+							persönliche <strong style="font-weight: 700">Beratung und Begleitung</strong>
+						</li>
+						<li style="margin: 0 0 5px 0">
+							Unterstützung bei
+							<strong style="font-weight: 700">Polizei-, Gerichts- und Behördenterminen</strong>
+						</li>
+						<li style="margin: 0 0 5px 0">
+							<strong style="font-weight: 700">finanzielle Soforthilfe</strong> in akuten Notlagen
+						</li>
+						<li style="margin: 0 0 5px 0">
+							<strong style="font-weight: 700">Hilfeschecks</strong> für eine anwaltliche Erstberatung
+						</li>
+						<li style="margin: 0 0 5px 0">
+							Vermittlung <strong style="font-weight: 700">therapeutischer Unterstützung</strong>
+						</li>
+						<li style="margin: 0">
+							bundesweit rund 3.000
+							<strong style="font-weight: 700">ehrenamtliche</strong> Mitarbeiterinnen und Mitarbeiter
+						</li>
+					</ul>
+				</mj-text>
+				<mj-button align="left" padding="24px 0 0 0" href="https://weisser-ring.de/hilfe-fuer-opfer-0">
+					UNSER HILFSANGEBOT
+					<img
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/butoon-arrow-icon.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+		</mj-section>
+
+		<!-- Orange donation band 1 -->
+		<mj-section padding="24px 30px 24px 30px" background-color="#FF7F00">
+			<mj-column width="353px">
+				<mj-text mj-class="h2" color="#002550" padding="0">
+					Unsere Hilfe ist nur möglich, weil Menschen sie mit ihrer Spende ermöglichen.
+				</mj-text>
+				<mj-button
+					href="https://spenden.weisser-ring.de/spenden"
+					mj-class="btn-inverse"
+					align="left"
+					padding="16px 0 0 0"
+				>
+					JETZT SPENDEN
+					<img
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/butoon-arrow-icon-inverse.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+		</mj-section>
+
+		<!-- Light story -->
+		<mj-section
+			background-url="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/bg-light-story.jpg"
+			background-color="#CDEAF8"
+			background-size="cover"
+			background-repeat="no-repeat"
+			background-position="center center"
+			padding="40px 30px 40px 30px"
+		>
+			<mj-column
+				width="34.63%"
+				padding-right="20px"
+				padding-bottom="20px"
+				vertical-align="top"
+				css-class="img-mobile-center"
+			>
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/person-illustration.png"
+					alt="Illustration einer Person, die Unterstützung erhält"
+					align="center"
+				/>
+			</mj-column>
+			<mj-column width="65.37%" vertical-align="top">
+				<mj-text css-class="h1-mobile" mj-class="h1" color="#002550" padding="0">
+					HINTER JEDER STRAFTAT STEHT EIN MENSCH
+				</mj-text>
+				<mj-text mj-class="h2" color="#002550" padding="10px 0 0 0"> „Ich lebe jetzt mein Leben“ </mj-text>
+				<mj-text color="#002550" padding="8px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0 0 12px 0">
+						Jedes Opfer hat eine Geschichte. Hier ist die Geschichte von
+						<strong style="font-weight: 700">Franziska P.</strong> (Name geändert). Sie wurde zur
+						Prostitution gezwungen und mit dem Tode bedroht. Sie hat dafür hart gekämpft und viel riskiert,
+						um heute in Freiheit leben zu können. Sie war Opfer von Menschenhandel, hat die Flucht geschafft
+						und konnte mit Unterstützung des WEISSEN RINGS und einer Fachberatungsstelle einen Neuanfang
+						beginnen.
+					</p>
+					<p style="margin: 0">
+						Jede Geschichte ist anders. Aber eines verbindet viele Betroffene: Sie brauchen jemanden, der
+						zuhört, unterstützt und den nächsten Schritt mit ihnen geht.
+					</p>
+				</mj-text>
+				<mj-button
+					href="https://wr-magazin.de/themen/wir-geben-nicht-auf/"
+					align="left"
+					inner-padding="8px 10px"
+					padding="24px 0 0 0"
+				>
+					DIE GANZE GESCHICHTE LESEN
+					<img
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/butoon-arrow-icon.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+		</mj-section>
+
+		<!-- Cyan "jedes opfer" -->
+		<mj-section background-color="#019DE2" padding="4px 10px 24px 30px" css-class="bleed-r">
+			<mj-column
+				width="44%"
+				vertical-align="top"
+				padding-right="20px"
+				padding-top="20px"
+				css-class="bleed-r-text"
+			>
+				<mj-text css-class="h1-mobile" mj-class="h1" color="#FFFFFF" padding="0">
+					OPFER VON DIGITALER GEWALT
+				</mj-text>
+				<mj-text color="#FFFFFF" padding="8px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0">
+						Vor allem Frauen und Mädchen sind in nahezu allen Lebensbereichen von digitaler Gewalt
+						betroffen: ob im privaten Umfeld, im öffentlichen Raum oder auch im beruflichen Kontext. Dabei
+						sind digitale und analoge Gewalt in vielen Fällen eng miteinander verknüpft.
+						<strong style="font-weight: 700">Collien Monica Fernandes</strong> ist eine dieser betroffenen
+						Frauen: „Wir müssen gemeinsam die Mauer des Schweigens einreißen.“
+					</p>
+				</mj-text>
+				<mj-button
+					href="https://spenden.weisser-ring.de?placeholder"
+					align="left"
+					inner-padding="8px 10px"
+					padding="16px 0 0 0"
+				>
+					MEHR ERFAHREN
+					<img
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/butoon-arrow-icon.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+			<mj-column
+				width="56%"
+				vertical-align="top"
+				padding-right="20px"
+				padding-top="20px"
+				css-class=" bleed-r-img"
+			>
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/story-photo.jpg"
+					alt="Standbild: Collien Monica Fernandes"
+					align="center"
+				/>
+			</mj-column>
+		</mj-section>
+
+		<!-- Donation grid -->
+		<mj-wrapper
+			background-url="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/bg-donation-grid.jpg"
+			background-color="#002550"
+			background-size="cover"
+			background-repeat="no-repeat"
+			padding="64px 30px 64px 30px"
+		>
+			<mj-section padding="0">
+				<mj-column>
+					<mj-text css-class="h1-mobile" mj-class="h1" color="#FFFFFF" align="center" padding="0">
+						IHRE UNTERSTÜTZUNG<br />MACHT HILFE MÖGLICH
+					</mj-text>
+					<mj-text mj-class="h2" color="#FFFFFF" align="center" padding="10px 0 0 0">
+						Schon kleine Beträge helfen ganz konkret:
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+			<!-- Donation grid — row 1 -->
+			<mj-section padding="44px 0 0 0">
+				<mj-group width="65.43%">
+					<mj-column width="50%" padding="0 10px 0 0">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">20€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							ermöglichen die Begleitung zu einem Gerichtstermin.
+						</mj-text>
+					</mj-column>
+					<mj-column width="50%" padding="0 0 0 10px">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">35€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							finanzieren einen Wochenend&shy;einkauf nach einem Raub.
+						</mj-text>
+					</mj-column>
+				</mj-group>
+			</mj-section>
+
+			<!-- Donation grid — row 2 -->
+			<mj-section padding="20px 0 0 0">
+				<mj-group width="65.43%">
+					<mj-column width="50%" padding="0 10px 20px 0">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">85€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							helfen beim Ersatz dringend benötigter Kleidung.
+						</mj-text>
+					</mj-column>
+					<mj-column width="50%" padding="0 0 20px 10px">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">130€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							ermöglichen den Austausch <br />eines Türschlosses.
+						</mj-text>
+					</mj-column>
+				</mj-group>
+				<mj-column width="34.57%" padding="0 0 20px 20px">
+					<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">550€</mj-text>
+					<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+						unterstützen ein <br />
+						Gewaltschutz&shy;verfahren.
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+			<mj-section padding="20px 0 0 0">
+				<mj-column>
+					<mj-button align="center" href="https://spenden.weisser-ring.de">
+						SO WIRKT IHRE SPENDE
+						<img
+							src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/butoon-arrow-icon.png"
+							width="8"
+							height="8"
+							alt=""
+							style="vertical-align: middle; margin-left: 4px"
+						/>
+					</mj-button>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+
+		<!-- Anniversary -->
+		<mj-wrapper
+			background-url="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/bg-anniversary.jpg"
+			background-color="#FFFFFF"
+			background-size="cover"
+			background-repeat="no-repeat"
+			padding="64px 20px 44px 20px"
+		>
+			<mj-section padding="0">
+				<mj-column width="413px" padding="0 10px">
+					<mj-image
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/logo-anniversary.png"
+						alt="WEISSER RING 50 Jahre Jubiläumslogo"
+						width="78px"
+						align="center"
+						padding="0"
+					/>
+					<mj-text css-class="h1-mobile" mj-class="h1" color="#019DE2" align="center" padding="16px 0 0 0">
+						SEIT 50 JAHREN AN DER SEITE VON KRIMINALITÄTSOPFERN
+					</mj-text>
+					<mj-text mj-class="h2" color="#002550" align="center" padding="8px 0 0 0">
+						Der WEISSE RING ist Deutschlands größte Hilfsorganisation für Opfer von Kriminalität.
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+			<!-- Anniversary — stats -->
+			<mj-section padding="40px 0 0 0">
+				<mj-group width="50%">
+					<mj-column width="50%" padding="0 10px 20px 10px" vertical-align="top">
+						<mj-image
+							src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/buildings-icon.png"
+							alt=""
+							width="30px"
+							align="center"
+							padding="0"
+						/>
+						<mj-text align="center" padding="10px 0 0 0">über 400 Außenstellen bundesweit</mj-text>
+					</mj-column>
+					<mj-column width="50%" padding="0 10px 20px 10px" vertical-align="top">
+						<mj-image
+							src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/heart-icon.png"
+							alt=""
+							width="30px"
+							align="center"
+							padding="0"
+						/>
+						<mj-text align="center" padding="10px 0 0 0">rund 3.000 ehrenamtlich Engagierte</mj-text>
+					</mj-column>
+				</mj-group>
+				<mj-group width="50%">
+					<mj-column width="50%" padding="0 10px 20px 10px" vertical-align="top">
+						<mj-image
+							src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/chat-icon.png"
+							alt=""
+							width="30px"
+							align="center"
+							padding="0"
+						/>
+						<mj-text align="center" padding="10px 0 0 0">
+							bundesweite <br />Opfer-Telefon-Hotline 116 006 (täglich von 7 bis 22 Uhr)
+						</mj-text>
+					</mj-column>
+					<mj-column width="50%" padding="0 10px 20px 10px" vertical-align="top">
+						<mj-image
+							src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/handshake-icon.png"
+							alt=""
+							width="32px"
+							align="center"
+							padding="0"
+						/>
+						<mj-text align="center" padding="10px 0 0 0">
+							unabhängig und überwiegend spendenfinanziert
+						</mj-text>
+					</mj-column>
+				</mj-group>
+			</mj-section>
+		</mj-wrapper>
+
+		<!-- U-Bahn -->
+		<mj-section background-color="#002550" padding="4px 30px 24px 10px" css-class="bleed-l">
+			<mj-column
+				width="56%"
+				vertical-align="middle"
+				padding-top="20px"
+				padding-left="20px"
+				css-class="bleed-l-img"
+			>
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/u-bahn-photo.jpg"
+					alt="U-Bahn-Kampagne des WEISSEN RINGS"
+					align="center"
+				/>
+			</mj-column>
+			<mj-column
+				width="44%"
+				vertical-align="middle"
+				padding-left="20px"
+				padding-top="20px"
+				css-class="bleed-l-text"
+			>
+				<mj-text mj-class="h2" color="#FFFFFF" padding="0">
+					Jede Geschichte verdient<br />jemanden, der hinsieht.
+				</mj-text>
+				<mj-text color="#FFFFFF" font-size="14px" line-height="18px" padding="5px 0 0 0">
+					Mit Ihrer Unterstützung können wir Menschen helfen, nach einer Straftat neue Perspektiven zu finden.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+		<!-- Orange donation band 2 -->
+		<mj-section padding="24px 30px 24px 30px" background-color="#FF7F00">
+			<mj-column width="355px">
+				<mj-text mj-class="h2" color="#002550" padding="0">
+					Jede Spende trägt dazu bei, dass Betroffene nach einer Straftat nicht allein bleiben.
+				</mj-text>
+				<mj-button
+					href="https://spenden.weisser-ring.de/spenden"
+					mj-class="btn-inverse"
+					align="left"
+					padding="16px 0 0 0"
+				>
+					JETZT SPENDEN
+					<img
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/butoon-arrow-icon-inverse.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+		</mj-section>
+
+		<!-- Spacer -->
+		<mj-section background-color="#FFFFFF" padding="0">
+			<mj-column>
+				<mj-spacer height="40px" />
+			</mj-column>
+		</mj-section>
+
+		<!-- Social band -->
+		<mj-section background-color="#019DE2" padding="24px 30px 24px 30px">
+			<mj-column>
+				<mj-text mj-class="h2" color="#FFFFFF" align="center" padding="0">
+					Ihnen gefällt unser Newsletter?
+				</mj-text>
+				<mj-text color="#FFFFFF" align="center" padding="8px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0 0 10px 0">Leiten Sie ihn gerne an Bekannte oder Kolleg:innen weiter!</p>
+					<p style="margin: 0">Und bleiben Sie mit uns in Verbindung:</p>
+				</mj-text>
+				<mj-social
+					mode="horizontal"
+					align="center"
+					padding="16px 0 0 0"
+					icon-padding="0 8px"
+					font-size="0"
+					line-height="0"
+				>
+					<mj-social-element
+						href="https://www.facebook.com/WEISSERRING"
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/fb-icon.png"
+						icon-size="10px"
+						icon-height="20px"
+						background-color="transparent"
+						border-radius="0"
+						alt="Facebook"
+					/>
+					<mj-social-element
+						href="https://www.instagram.com/weisser_ring"
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/inst-icon.png"
+						icon-size="21px"
+						background-color="transparent"
+						border-radius="0"
+						alt="Instagram"
+					/>
+					<mj-social-element
+						href="https://www.linkedin.com/company/weisserringev"
+						src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/linkedin-icon.png"
+						icon-size="18px"
+						background-color="transparent"
+						border-radius="0"
+						alt="LinkedIn"
+					/>
+				</mj-social>
+			</mj-column>
+		</mj-section>
+
+		<!-- Footer — logo -->
+		<mj-section background-color="#FFFFFF" padding="24px 30px 0 30px">
+			<mj-column>
+				<mj-image
+					src="https://domanell.github.io/mjml-email/emails/weisser-ring-newsletter/assets/logo.png"
+					href="https://weisser-ring.de"
+					alt="WEISSER RING"
+					width="167px"
+					align="right"
+					css-class="img-mobile-center"
+				/>
+			</mj-column>
+		</mj-section>
+
+		<!-- Footer — unsubscribe -->
+		<mj-section background-color="#FFFFFF" padding="24px 30px 0 30px">
+			<mj-column>
+				<mj-text mj-class="legal" padding="0">
+					Falls Sie keine weiteren Informationen von uns erhalten möchten, können Sie sich jederzeit
+					<a
+						href="https://spenden.weisser-ring.de?placeholder"
+						style="color: #002550; text-decoration: underline"
+						>hier abmelden</a
+					>.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+		<!-- Footer — publisher & legal -->
+		<mj-section background-color="#FFFFFF" padding="16px 30px 24px 30px">
+			<mj-column>
+				<mj-text color="#002550" font-size="12px" line-height="15px" padding="0" letter-spacing="0.15px">
+					<p style="margin: 0">
+						<strong style="font-weight: 700">Herausgeber: </strong><br />
+						WEISSER RING e. V.<br />
+						Weberstraße 16<br />
+						55130 Mainz<br />
+						Deutschland
+					</p>
+					<p style="margin: 12px 0 0 0">
+						<strong style="font-weight: 700">Telefon:</strong>
+						<a href="tel:+4961318303-0" style="color: #002550; text-decoration: none">+49 6131 8303-0</a
+						><br />
+						<strong style="font-weight: 700">E-Mail:</strong>
+						<a href="mailto:newsletter@weisser-ring.de" style="color: #002550; text-decoration: none"
+							>newsletter@weisser-ring.de</a
+						><br />
+						<strong style="font-weight: 700">Internet:</strong>
+						<a href="http://www.weisser-ring.de" style="color: #002550; text-decoration: none"
+							>www.weisser-ring.de</a
+						>
+					</p>
+				</mj-text>
+				<mj-text mj-class="legal" padding="32px 0 0 0">
+					<p style="margin: 0 0 2px 0">
+						Der WEISSE RING wird gesetzlich vertreten durch den Geschäftsführenden Bundesvorstand.
+					</p>
+					<p style="margin: 0 0 2px 0">
+						<strong style="font-weight: 700">Hinweise zum Datenschutz:</strong>
+						<a
+							href="https://weisser-ring.de/datenschutzerklaerung"
+							style="color: #002550; text-decoration: none"
+							>Datenschutzerklärung</a
+						>
+						| WEISSER RING e. V.
+					</p>
+					<p style="margin: 0 0 2px 0">
+						<strong style="font-weight: 700">Umsatzsteuer-Identifikationsnummer:</strong> DE 149064635
+					</p>
+					<p style="margin: 0 0 2px 0">
+						Der WEISSE RING ist unter der Nummer VR 1648 im Vereinsregister beim Amtsgericht Mainz
+						eingetragen.
+					</p>
+					<p style="margin: 0 0 2px 0">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: NN, Funktion</p>
+					<p style="margin: 0">
+						Sie erhalten diese Nachricht, weil Sie sich für unseren Newsletter-Service registriert haben.
+					</p>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-body>
+</mjml>
