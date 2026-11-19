@@ -1,0 +1,607 @@
+<mjml lang="de">
+	<mj-head>
+		<mj-title>Ihre Spende gibt Opfern von Kriminalität eine Perspektive</mj-title>
+		<mj-preview>Gemeinsam helfen. Menschen beistehen.</mj-preview>
+		<mj-raw>
+			<meta name="supported-color-schemes" content="light" /> <meta name="color-scheme" content="only light" />
+		</mj-raw>
+		<mj-style>
+			:root,
+			body,
+			html {
+				color-scheme: light;
+			}
+			body,
+			html {
+				color-scheme: only light;
+			}
+		</mj-style>
+		<mj-style inline="inline">
+			.bg-light-story,
+			.bg-light-story > table {
+				background: linear-gradient(129.56deg, #009ee0 -5.76%, #ffffff 46.43%) !important;
+			}
+			.bg-anniversary,
+			.bg-anniversary > table {
+				background: linear-gradient(27.47deg, #1d9ad7 -11.08%, #ffffff 52.55%) !important;
+			}
+		</mj-style>
+
+		<mj-font
+			name="Merriweather Sans"
+			href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;700;800&amp;display=swap"
+		/>
+		<mj-font
+			name="Merriweather"
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&amp;display=swap"
+		/>
+
+		<mj-breakpoint width="480px" />
+
+		<mj-attributes>
+			<mj-all font-family="Merriweather, Georgia, 'Times New Roman', serif" />
+
+			<mj-section padding="0" />
+			<mj-column padding="0" />
+			<mj-image padding="0" />
+			<mj-text
+				font-family="Merriweather, Georgia, 'Times New Roman', serif"
+				font-weight="300"
+				font-size="12px"
+				line-height="15px"
+				letter-spacing="0px"
+				color="#1B2645"
+				padding="0"
+			/>
+			<mj-button
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="700"
+				font-size="12px"
+				letter-spacing="-0.3px"
+				text-transform="uppercase"
+				text-decoration="none"
+				background-color="#FF7F00"
+				color="#002550"
+				border-radius="0"
+				inner-padding="8px 14px"
+				padding="0"
+			/>
+
+			<mj-class
+				name="h1"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="800"
+				font-size="26px"
+				line-height="30px"
+				letter-spacing="-0.4px;"
+				text-transform="uppercase"
+			/>
+			<mj-class
+				name="h2"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="700"
+				font-size="18px"
+				line-height="22px"
+				letter-spacing="-0.3px"
+			/>
+			<mj-class
+				name="amount"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="800"
+				font-size="30px"
+				line-height="34px"
+				letter-spacing="0px"
+			/>
+			<mj-class
+				name="lead-in"
+				font-family="Merriweather, Georgia, 'Times New Roman', serif"
+				font-weight="700"
+				font-size="14px"
+				line-height="18px"
+				letter-spacing="0px"
+				color="#019DE2"
+			/>
+			<mj-class
+				name="tile-label"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="300"
+				font-size="10px"
+				line-height="14px"
+				letter-spacing="0px"
+				color="#1B2645"
+			/>
+			<mj-class
+				name="legal"
+				font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+				font-weight="300"
+				font-size="9px"
+				line-height="12px"
+				letter-spacing="0"
+				color="#002550"
+			/>
+			<mj-class name="btn-inverse" background-color="#002550" color="#FFFFFF" />
+		</mj-attributes>
+
+		<mj-html-attributes>
+			<mj-selector path=".h1-heading div">
+				<mj-html-attribute name="role">heading</mj-html-attribute>
+				<mj-html-attribute name="aria-level">1</mj-html-attribute>
+			</mj-selector>
+			<mj-selector path=".h2-heading div">
+				<mj-html-attribute name="role">heading</mj-html-attribute>
+				<mj-html-attribute name="aria-level">2</mj-html-attribute>
+			</mj-selector>
+		</mj-html-attributes>
+
+		<mj-style>
+			@media screen and (max-width: 480px) {
+				.hdr-stack,
+				.hdr-stack td,
+				.hdr-stack div {
+					text-align: center !important;
+				}
+				.hdr-stack table {
+					margin: 0 auto !important;
+				}
+				.signature-role {
+					font-size: 10px !important;
+				}
+				.h1-mobile div {
+					font-size: 22px !important;
+					line-height: 26px !important;
+				}
+				.img-mobile-center,
+				.img-mobile-center td,
+				.img-mobile-center div {
+					text-align: center !important;
+				}
+				.img-mobile-center table {
+					margin: 0 auto !important;
+				}
+				.img-mobile-center td {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+			}
+			@media screen and (min-width: 480.02px) {
+				.bleed-r > table > tbody > tr > td {
+					padding-right: 0px !important;
+				}
+				.bleed-r-text > table > tbody > tr > td {
+					padding-right: 0px !important;
+				}
+				.bleed-r-img > table > tbody > tr > td {
+					padding-left: 25px !important;
+					padding-right: 0px !important;
+				}
+				.bleed-l > table > tbody > tr > td {
+					padding-left: 0px !important;
+				}
+				.bleed-l-text > table > tbody > tr > td {
+					padding-left: 0px !important;
+				}
+				.bleed-l-img > table > tbody > tr > td {
+					padding-left: 0px !important;
+					padding-right: 25px !important;
+				}
+			}
+		</mj-style>
+	</mj-head>
+
+	<mj-body width="600px" background-color="#FFFFFF">
+		<!-- Header -->
+		<mj-section background-color="#FF7F00" padding="16px 30px 12px 30px">
+			<mj-column width="50%" vertical-align="top" css-class="hdr-stack">
+				<mj-image
+					src="https://wr-magazin.de/wp-content/uploads/2026/09/herzenssache-weisser-ring.png"
+					alt="Herzenssache – WEISSER RING"
+					width="245px"
+					align="left"
+					padding="0"
+				/>
+			</mj-column>
+			<mj-column width="50%" vertical-align="top" css-class="hdr-stack" padding-top="7px">
+				<mj-image src="https://wr-magazin.de/wp-content/uploads/2026/09/hands.png" alt="Herz-Hände-Symbol" width="149px" align="right" padding="0" />
+				<mj-text
+					align="right"
+					color="#002550"
+					font-family="Merriweather Sans, Trebuchet MS, Verdana, Arial, sans-serif"
+					font-weight="400"
+					font-size="13px"
+					letter-spacing="0px"
+					padding="2px 0 0 0"
+				>
+					Gemeinsam helfen. Menschen beistehen.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+		<!-- Notice -->
+		<mj-section background-color="#FFFFFF" padding="15px 30px 15px 30px">
+			<mj-column>
+				<mj-text mj-class="tile-label" color="#002550" align="center">
+					<p style="margin: 0">
+						[NN*] unterstützt den WEISSEN RING bei der Spendenwerbung. Sie erhalten diese E-Mail, weil Sie
+						bei [NN*] eingewilligt haben, Werbung zugeschickt zu bekommen. Dem können Sie jederzeit
+						widersprechen.
+					</p>
+					<p style="margin: 0; font-weight: 700; color: #019de2">
+						Den Abmeldelink finden Sie am Ende der Mail.
+					</p>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+		<!-- Hero -->
+		<mj-section padding="0">
+			<mj-column>
+				<mj-image
+					src="assets/hero.jpg"
+					alt="Ihre Spende gibt Opfern von Kriminalität eine Perspektive. Jakob, ehrenamtlicher Opferhelfer des WEISSEN RINGS"
+					width="600px"
+					fluid-on-mobile="true"
+					padding="0"
+				/>
+			</mj-column>
+		</mj-section>
+
+		<!-- Editorial letter -->
+		<mj-section padding="16px 22px 40px 30px" direction="rtl" text-align="right">
+			<mj-column width="93px" direction="ltr" padding-top="8px">
+				<mj-image
+					src="https://wr-magazin.de/wp-content/uploads/2026/09/heart-button.png"
+					href="https://spenden.weisser-ring.de/spenden"
+					alt="Jetzt spenden!"
+					width="86px"
+					align="center"
+					padding="0"
+				/>
+			</mj-column>
+			<mj-column width="65.88%" direction="ltr" padding-top="24px" padding-right="8px">
+				<mj-text letter-spacing="0.15px">
+					<p style="margin: 0 0 12px 0">Liebe Leserin, lieber Leser,</p>
+					<p style="margin: 0">
+						eine Straftat kann das Leben des Opfers von einem Moment auf den anderen verändern. Was oft
+						bleibt, sind Angst, Unsicherheit und das Gefühl, allein zu sein.
+					</p>
+				</mj-text>
+				<mj-text mj-class="lead-in" padding="12px 0 0 0">
+					<p style="margin: 0">Doch niemand sollte nach einer Straftat allein bleiben.</p>
+				</mj-text>
+				<mj-text padding="12px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0 0 12px 0">
+						Der WEISSE RING ist für Menschen da, die Opfer von Kriminalität geworden sind. Unsere
+						ehrenamtlichen Mitarbeiterinnen und Mitarbeiter hören zu, beraten, begleiten und helfen – genau
+						dann, wenn Unterstützung besonders dringend gebraucht wird.
+					</p>
+					<p style="margin: 0">
+						<strong style="font-weight: 700">
+							Damit wir auch weiterhin für Betroffene da sein können, brauchen wir Ihre Unterstützung.
+						</strong>
+					</p>
+				</mj-text>
+				<mj-button align="left" padding="24px 0 0 0" href="https://spenden.weisser-ring.de/spenden">
+					JETZT MIT IHRER SPENDE HELFEN
+					<img
+						src="https://wr-magazin.de/wp-content/uploads/2026/09/butoon-arrow-icon.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+				<mj-table role="presentation" width="100%" padding="32px 0 0 0">
+					<tr>
+						<td width="68" style="vertical-align: top; padding: 0 16px 0 0">
+							<img
+								src="https://wr-magazin.de/wp-content/uploads/2026/09/person-photo.png"
+								alt="Porträt Barbara Richstein"
+								width="68"
+								style="
+									display: block;
+									border: 0;
+									outline: none;
+									text-decoration: none;
+									width: 68px;
+									height: auto;
+								"
+							/>
+						</td>
+						<td style="vertical-align: top">
+							<p
+								style="
+									margin: 0;
+									font-family: Merriweather, Georgia, 'Times New Roman', serif;
+									font-weight: 300;
+									font-size: 12px;
+									line-height: 15px;
+									color: #1b2645;
+								"
+							>
+								Vielen Dank für Ihre Hilfe<br />Ihre Barbara Richstein
+							</p>
+							<p
+								class="signature-role"
+								style="
+									margin: 12px 0;
+									font-family:
+										Merriweather Sans,
+										Trebuchet MS,
+										Verdana,
+										Arial,
+										sans-serif;
+									font-weight: 300;
+									font-size: 9px;
+									line-height: 12px;
+									color: #1b2645;
+								"
+							>
+								Bundesvorsitzende
+							</p>
+							<a href="https://weisser-ring.de">
+								<img
+									src="https://wr-magazin.de/wp-content/uploads/2026/09/logo.png"
+									alt="WEISSER RING"
+									width="131"
+									style="
+										display: block;
+										border: 0;
+										outline: none;
+										text-decoration: none;
+										width: 131px;
+										height: auto;
+									"
+								/>
+							</a>
+						</td>
+					</tr>
+				</mj-table>
+			</mj-column>
+		</mj-section>
+
+		<!-- Light story 1 -->
+		<mj-section background-color="#eaf8ff" css-class="bg-light-story" padding="40px 30px 30px 30px">
+			<mj-column
+				width="34.63%"
+				padding-right="20px"
+				padding-bottom="20px"
+				vertical-align="top"
+				css-class="img-mobile-center"
+			>
+				<mj-image
+					src="https://wr-magazin.de/wp-content/uploads/2026/09/person-illustration.png"
+					alt="Illustration einer Person, die Unterstützung erhält"
+					align="center"
+				/>
+			</mj-column>
+			<mj-column width="65.37%" vertical-align="top">
+				<mj-text css-class="h1-mobile" mj-class="h1" color="#002550" padding="0">
+					IHRE SPENDE MACHT<br />HILFE MÖGLICH
+				</mj-text>
+				<mj-text color="#002550" padding="8px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0">
+						Hinter jeder Straftat steht ein Mensch. Ein Mensch, der vielleicht nicht mehr allein aus dem
+						Haus geht, nachts nicht schlafen kann oder nach einem Übergriff dringend Schutz und
+						Unterstützung benötigt.
+					</p>
+				</mj-text>
+				<mj-text mj-class="lead-in" padding="12px 0 0 0">
+					<p style="margin: 0">
+						Mit Ihrer Spende helfen Sie, dass Betroffene wieder Halt finden und Schritt für Schritt ins
+						Leben zurückkehren können.
+					</p>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+		<!-- Donation grid -->
+		<mj-wrapper
+			background-url="assets/bg-donation-grid.jpg"
+			background-color="#002550"
+			background-size="cover"
+			background-repeat="no-repeat"
+			padding="64px 30px 64px 30px"
+		>
+			<mj-section padding="0">
+				<mj-column>
+					<mj-text css-class="h1-mobile" mj-class="h1" color="#FFFFFF" align="center" padding="0">
+						DAS BEWIRKT IHRE<br />UNTERSTÜTZUNG<br />BEISPIELSWEISE:
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+			<!-- Donation grid — row 1 -->
+			<mj-section padding="44px 0 0 0">
+				<mj-group width="65.43%">
+					<mj-column width="50%" padding="0 10px 0 0">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">20€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							ermöglichen die Begleitung zu einem Gerichtstermin
+						</mj-text>
+					</mj-column>
+					<mj-column width="50%" padding="0 0 0 10px">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">35€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							finanzieren einen Wochenend-einkauf nach einem Raub
+						</mj-text>
+					</mj-column>
+				</mj-group>
+			</mj-section>
+
+			<!-- Donation grid — row 2 -->
+			<mj-section padding="20px 0 0 0">
+				<mj-group width="65.43%">
+					<mj-column width="50%" padding="0 10px 20px 0">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">85€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							helfen beim Ersatz zerrissener Kleidung
+						</mj-text>
+					</mj-column>
+					<mj-column width="50%" padding="0 0 20px 10px">
+						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">130€</mj-text>
+						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+							ermöglichen den Austausch <br />eines Türschlosses
+						</mj-text>
+					</mj-column>
+				</mj-group>
+				<mj-column width="34.57%" padding="0 0 20px 20px">
+					<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">550€</mj-text>
+					<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
+						unterstützen ein <br />
+						Gewaltschutz&shy;verfahren
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+			<mj-section padding="20px 0 0 0">
+				<mj-column>
+					<mj-button align="center" href="https://spenden.weisser-ring.de/spenden">
+						JETZT SPENDEN
+						<img
+							src="https://wr-magazin.de/wp-content/uploads/2026/09/butoon-arrow-icon.png"
+							width="8"
+							height="8"
+							alt=""
+							style="vertical-align: middle; margin-left: 4px"
+						/>
+					</mj-button>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+
+		<!-- Orange band -->
+		<mj-section padding="24px 30px 24px 30px" background-color="#FF7F00">
+			<mj-column width="353px">
+				<mj-text mj-class="h2" color="#002550" padding="0">Jeder Beitrag zählt.</mj-text>
+				<mj-text color="#002550" font-size="14px" line-height="18px" padding="5px 0 0 0">
+					Denn jede Spende hilft dabei, Menschen in einer schwierigen Lebenssituation nicht allein zu lassen.
+				</mj-text>
+				<mj-button
+					href="https://spenden.weisser-ring.de/spenden"
+					mj-class="btn-inverse"
+					align="left"
+					padding="16px 0 0 0"
+				>
+					JETZT SPENDEN
+					<img
+						src="https://wr-magazin.de/wp-content/uploads/2026/09/butoon-arrow-icon-inverse.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+		</mj-section>
+
+		<!-- Light story 2 -->
+		<mj-section background-color="#eaf8ff" css-class="bg-light-story" padding="64px 30px 64px 30px">
+			<mj-column
+				width="34.63%"
+				padding-right="20px"
+				padding-bottom="20px"
+				vertical-align="middle"
+				css-class="img-mobile-center"
+			>
+				<mj-image
+					src="assets/person-illustration-2.png"
+					alt="Illustration einer Person, die Unterstützung erhält"
+					align="center"
+				/>
+			</mj-column>
+			<mj-column width="65.37%" vertical-align="middle">
+				<mj-text css-class="h1-mobile" mj-class="h1" color="#002550" padding="0">
+					GEMEINSAM AN DER SEITE VON BETROFFENEN
+				</mj-text>
+				<mj-text
+					color="#002550"
+					font-size="14px"
+					line-height="18px"
+					padding="8px 0 0 0"
+					letter-spacing="0.15px"
+				>
+					<p style="margin: 0">
+						Seit 50 Jahren steht der WEISSE RING Menschen zur Seite, die Opfer von Kriminalität geworden
+						sind. Bundesweit engagieren sich rund 3.000 Ehrenamtliche in mehr als 400 Außenstellen.
+					</p>
+				</mj-text>
+				<mj-text mj-class="lead-in" padding="12px 0 0 0">
+					<p style="margin: 0">
+						Diese Hilfe ist nur möglich, weil Menschen wie Sie den WEISSEN RING unterstützen.
+					</p>
+				</mj-text>
+				<mj-text
+					color="#002550"
+					font-size="14px"
+					line-height="18px"
+					padding="12px 0 0 0"
+					letter-spacing="0.15px"
+				>
+					<p style="margin: 0">Bitte helfen Sie mit Ihrer Spende, damit Betroffene nicht allein bleiben.</p>
+				</mj-text>
+				<mj-button
+					href="https://spenden.weisser-ring.de/spenden"
+					align="left"
+					inner-padding="8px 10px"
+					padding="24px 0 0 0"
+				>
+					JETZT SPENDEN UND HILFE MÖGLICH MACHEN
+					<img
+						src="https://wr-magazin.de/wp-content/uploads/2026/09/butoon-arrow-icon.png"
+						width="8"
+						height="8"
+						alt=""
+						style="vertical-align: middle; margin-left: 4px"
+					/>
+				</mj-button>
+			</mj-column>
+		</mj-section>
+
+		<!-- Social band -->
+		<mj-section background-color="#019DE2" padding="24px 30px 24px 30px">
+			<mj-column>
+				<mj-text mj-class="h2" color="#FFFFFF" align="center" padding="0">
+					Ihnen gefällt unser Newsletter?
+				</mj-text>
+				<mj-text color="#FFFFFF" align="center" padding="8px 0 0 0" letter-spacing="0.15px">
+					<p style="margin: 0 0 10px 0">Leiten Sie ihn gerne an Bekannte oder Kolleg:innen weiter!</p>
+					<p style="margin: 0">Und bleiben Sie mit uns in Verbindung:</p>
+				</mj-text>
+				<mj-social
+					mode="horizontal"
+					align="center"
+					padding="16px 0 0 0"
+					icon-padding="0 8px"
+					font-size="0"
+					line-height="0"
+				>
+					<mj-social-element
+						href="https://www.facebook.com/WEISSERRING"
+						src="https://wr-magazin.de/wp-content/uploads/2026/09/fb-icon.png"
+						icon-size="10px"
+						icon-height="20px"
+						background-color="transparent"
+						border-radius="0"
+						alt="Facebook"
+					/>
+					<mj-social-element
+						href="https://www.instagram.com/weisser_ring"
+						src="https://wr-magazin.de/wp-content/uploads/2026/09/inst-icon.png"
+						icon-size="21px"
+						background-color="transparent"
+						border-radius="0"
+						alt="Instagram"
+					/>
+					<mj-social-element
+						href="https://www.linkedin.com/company/weisserringev"
+						src="https://wr-magazin.de/wp-content/uploads/2026/09/linkedin-icon.png"
+						icon-size="18px"
+						background-color="transparent"
+						border-radius="0"
+						alt="LinkedIn"
+					/>
+				</mj-social>
+			</mj-column>
+		</mj-section>
+	</mj-body>
+</mjml>
