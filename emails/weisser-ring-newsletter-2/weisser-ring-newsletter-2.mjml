@@ -122,17 +122,6 @@
 			<mj-class name="btn-inverse" background-color="#002550" color="#FFFFFF" />
 		</mj-attributes>
 
-		<mj-html-attributes>
-			<mj-selector path=".h1-heading div">
-				<mj-html-attribute name="role">heading</mj-html-attribute>
-				<mj-html-attribute name="aria-level">1</mj-html-attribute>
-			</mj-selector>
-			<mj-selector path=".h2-heading div">
-				<mj-html-attribute name="role">heading</mj-html-attribute>
-				<mj-html-attribute name="aria-level">2</mj-html-attribute>
-			</mj-selector>
-		</mj-html-attributes>
-
 		<mj-style>
 			@media screen and (max-width: 480px) {
 				.hdr-stack,
@@ -201,7 +190,13 @@
 				/>
 			</mj-column>
 			<mj-column width="50%" vertical-align="top" css-class="hdr-stack" padding-top="7px">
-				<mj-image src="https://wr-magazin.de/wp-content/uploads/2026/09/hands.png" alt="Herz-Hände-Symbol" width="149px" align="right" padding="0" />
+				<mj-image
+					src="https://wr-magazin.de/wp-content/uploads/2026/09/hands.png"
+					alt="Herz-Hände-Symbol"
+					width="149px"
+					align="right"
+					padding="0"
+				/>
 				<mj-text
 					align="right"
 					color="#002550"
@@ -236,7 +231,7 @@
 		<mj-section padding="0">
 			<mj-column>
 				<mj-image
-					src="assets/hero.jpg"
+					src="https://wr-magazin.de/wp-content/uploads/2026/11/hero.jpg"
 					alt="Ihre Spende gibt Opfern von Kriminalität eine Perspektive. Jakob, ehrenamtlicher Opferhelfer des WEISSEN RINGS"
 					width="600px"
 					fluid-on-mobile="true"
@@ -290,7 +285,7 @@
 						style="vertical-align: middle; margin-left: 4px"
 					/>
 				</mj-button>
-				<mj-table role="presentation" width="100%" padding="32px 0 0 0">
+				<mj-table role="presentation" width="100%" line-height="100%" padding="32px 0 0 0">
 					<tr>
 						<td width="68" style="vertical-align: top; padding: 0 16px 0 0">
 							<img
@@ -396,13 +391,13 @@
 
 		<!-- Donation grid -->
 		<mj-wrapper
-			background-url="assets/bg-donation-grid.jpg"
+			background-url="https://wr-magazin.de/wp-content/uploads/2026/11/bg-donation-grid.jpg"
 			background-color="#002550"
 			background-size="cover"
 			background-repeat="no-repeat"
-			padding="64px 30px 64px 30px"
+			padding="64px 0"
 		>
-			<mj-section padding="0">
+			<mj-section padding="0 30px">
 				<mj-column>
 					<mj-text css-class="h1-mobile" mj-class="h1" color="#FFFFFF" align="center" padding="0">
 						DAS BEWIRKT IHRE<br />UNTERSTÜTZUNG<br />BEISPIELSWEISE:
@@ -411,40 +406,41 @@
 			</mj-section>
 
 			<!-- Donation grid — row 1 -->
-			<mj-section padding="44px 0 0 0">
-				<mj-group width="65.43%">
-					<mj-column width="50%" padding="0 10px 0 0">
+			<mj-section padding="44px 20px 0 20px">
+				<mj-group width="66.66%">
+					<mj-raw> <!--[if mso | IE]><td style="width: 93px"></td><![endif]--> </mj-raw>
+					<mj-column width="50%" padding="0 10px">
 						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">20€</mj-text>
 						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
 							ermöglichen die Begleitung zu einem Gerichtstermin
 						</mj-text>
 					</mj-column>
-					<mj-column width="50%" padding="0 0 0 10px">
+					<mj-column width="50%" padding="0 10px">
 						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">35€</mj-text>
 						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
-							finanzieren einen Wochenend-einkauf nach einem Raub
+							finanzieren einen Wochenend&shy;einkauf nach einem Raub
 						</mj-text>
 					</mj-column>
 				</mj-group>
 			</mj-section>
 
 			<!-- Donation grid — row 2 -->
-			<mj-section padding="20px 0 0 0">
-				<mj-group width="65.43%">
-					<mj-column width="50%" padding="0 10px 20px 0">
+			<mj-section padding="20px 20px 0 20px">
+				<mj-group width="66.66%">
+					<mj-column width="50%" padding="0 10px 20px 10px">
 						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">85€</mj-text>
 						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
 							helfen beim Ersatz zerrissener Kleidung
 						</mj-text>
 					</mj-column>
-					<mj-column width="50%" padding="0 0 20px 10px">
+					<mj-column width="50%" padding="0 10px 20px 10px">
 						<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">130€</mj-text>
 						<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
 							ermöglichen den Austausch <br />eines Türschlosses
 						</mj-text>
 					</mj-column>
 				</mj-group>
-				<mj-column width="34.57%" padding="0 0 20px 20px">
+				<mj-column width="33.34%" padding="0 10px 20px 10px">
 					<mj-text mj-class="amount" color="#FFFFFF" align="center" padding="0">550€</mj-text>
 					<mj-text mj-class="tile-label" color="#FFFFFF" align="center">
 						unterstützen ein <br />
@@ -453,7 +449,7 @@
 				</mj-column>
 			</mj-section>
 
-			<mj-section padding="20px 0 0 0">
+			<mj-section padding="20px 30px 0 30px">
 				<mj-column>
 					<mj-button align="center" href="https://spenden.weisser-ring.de/spenden">
 						JETZT SPENDEN
@@ -504,7 +500,7 @@
 				css-class="img-mobile-center"
 			>
 				<mj-image
-					src="assets/person-illustration-2.png"
+					src="https://wr-magazin.de/wp-content/uploads/2026/11/person-illustration-2.png"
 					alt="Illustration einer Person, die Unterstützung erhält"
 					align="center"
 				/>
